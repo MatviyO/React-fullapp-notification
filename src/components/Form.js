@@ -7,7 +7,13 @@ export const Form = () => {
 
     const submitHandler = event => {
         event.preventDefault()
-        alert.show(value, 'success')
+        if (value.trim()) {
+            alert.show('Note created good', 'success')
+            setValue('')
+        } else {
+            alert.show('writing text', 'warning')
+        }
+
     }
     return (
         <form onSubmit={submitHandler}>

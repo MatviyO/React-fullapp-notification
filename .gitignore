@@ -8,6 +8,9 @@ typings/
 
 # Optional npm cache directory
 .npm
+.env.local
+.env.development.local
+
 
 # Optional eslint cache
 .eslintcache
