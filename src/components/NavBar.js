@@ -1,19 +1,30 @@
-import React from "react";
+import React from 'react'
 import {NavLink} from 'react-router-dom'
 
-export const NavBar = () => (
-    <nav className="navbar navbar-dark navbar-expand-lg bg-primary">
-        <div className="navbar-brend">
-            Note App
-        </div>
-        <ul className="navbar-nav">
-            <li className="nav-item ">
-                <NavLink exact  className="nav-link" to="/">Home</NavLink>
+export const Navbar = () => (
+  <nav className="navbar navbar-dark navbar-expand-lg bg-primary">
+    <div className="navbar-brand">
+      Note App
+    </div>
 
-            </li>
-    <li className="nav-item ">
-    <NavLink className="nav-link" to="/about">About</NavLink>
-    </li>
-        </ul>
-    </nav>
+    <ul className="navbar-nav">
+      <li className="nav-item">
+        <NavLink
+          className="nav-link"
+          to="/"
+          exact
+        >
+          Главная
+        </NavLink>
+      </li>
+      <li className="nav-item">
+        <NavLink
+          className="nav-link"
+          to="/about"
+        >
+          Информация
+        </NavLink>
+      </li>
+    </ul>
+  </nav>
 )
